@@ -3,37 +3,120 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.MainPage">
 
-    <ScrollView>
+    <ScrollView BackgroundColor="#074998">
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
+            BackgroundColor="#0f2ece"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="Jméno"/>
+            </StackLayout>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="Příjmení"/>
+            </StackLayout>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input3"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="Adresa"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input4"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="Město"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input5"
+                    Keyboard="Numeric"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="PSČ"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input6"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="Stát"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input7"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="IČO"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input8"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="DIČ"/>
+            </StackLayout>
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                WidthRequest="200"
+                HeightRequest="30"
+                x:Name="BTN1"
+                Text="Generovat PDF"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="#fffdf9"
+                Clicked="BTN_Clicked_1"
+                BackgroundColor="#ff8800"/>
 
         </VerticalStackLayout>
     </ScrollView>
